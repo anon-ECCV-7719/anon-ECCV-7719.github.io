@@ -10,7 +10,7 @@ interface Props {
           className="flex justify-center items-center relative pt-10px"
           style={{ backgroundColor: backgroundColor }}
         >
-            <video width={1050} controls autoPlay>
+            <video width={1050} controls autoPlay loop muted>
                 <source src={video} type="video/mp4" />
             </video>
         </div>

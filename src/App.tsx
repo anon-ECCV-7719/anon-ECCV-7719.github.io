@@ -6,24 +6,29 @@ import {
   bgColor,
   tldr,
   abstract,
-  expVideo,
-
+  video1,
+  video2,
+  approach,
+  workflow
 } from "./const";
 import Organization from "./Organization";
-import OneVideoBox from "./OneVideoBox";
-
+import TopVideoBox from "./TopVideoBox"
+import OneImageBox from "./OneImageBox"
 function App() {
   return (
     <>
       <WindowSizeContextProvider>
         <div className="w-screen h-screen min-w-[1400px]">
+
+          <TopVideoBox video1={video1} video2={video2} title="Our in-the-wild demonstration with YouTube videos" backgroundColor="white"/>
+
           {/* FIXME: Title, Author */}
           <TextBox
             title={
               <>
-                A Unified Approach for
+                UniMotion: Unified Motion Estimation for
                 <br />
-                Point Tracking and Video Object Segmentation
+                Point Tracking and Video Instance Segmentation
               </>
             }
             backgroundColor={"white"}
@@ -50,12 +55,16 @@ function App() {
 
           {/* FIXME: TL;DR */}
           <TextBox
-            title={`Video Box`}
+            title={"Approach"}
             backgroundColor={bgColor}
             textColor={"white"}
-            titleFontSize={"text-3xl"}
-          />
-          <OneVideoBox video={expVideo} backgroundColor="white"/>
+          >
+
+            <Markdown text={approach} />
+            </TextBox>
+            
+          <OneImageBox image={workflow} backgroundColor={"white"} />
+
 
           <TextBox
             title={"ECCV 2024 Submission"}
