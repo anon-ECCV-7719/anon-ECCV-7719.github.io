@@ -6,9 +6,11 @@ import {
   bgColor,
   tldr,
   abstract,
+  expVideo,
 
 } from "./const";
 import Organization from "./Organization";
+import OneVideoBox from "./OneVideoBox";
 
 function App() {
   return (
@@ -45,6 +47,15 @@ function App() {
           >
             <Markdown text={abstract} />
           </AbstractBox>
+
+          {/* FIXME: TL;DR */}
+          <TextBox
+            title={`Video Box`}
+            backgroundColor={bgColor}
+            textColor={"white"}
+            titleFontSize={"text-3xl"}
+          />
+          <OneVideoBox video={expVideo} backgroundColor="white"/>
 
           <TextBox
             title={"ECCV 2024 Submission"}
