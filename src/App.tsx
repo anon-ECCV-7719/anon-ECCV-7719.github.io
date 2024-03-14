@@ -89,7 +89,7 @@ function App() {
           <MiddleVideoBox video1={jointvideo7} video2={jointvideo8} title="Dynamic Human Instances" backgroundColor="white"/>
 
           <TextBox
-            title={"ECCV 2024 Submission"}
+            title={"ECCV 2024 Submission #7719"}
             backgroundColor={bgColor}
             textColor={"white"}
           />
