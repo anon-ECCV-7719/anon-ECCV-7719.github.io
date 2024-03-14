@@ -8,11 +8,20 @@ import {
   abstract,
   video1,
   video2,
+  jointvideo1,
+  jointvideo2,
+  jointvideo3,
+  jointvideo4,
+  jointvideo5,
+  jointvideo6,
+  jointvideo7,
+  jointvideo8,
   approach,
   workflow
 } from "./const";
 import Organization from "./Organization";
 import TopVideoBox from "./TopVideoBox"
+import MiddleVideoBox from "./MiddleVideoBox"
 import OneImageBox from "./OneImageBox"
 function App() {
   return (
@@ -65,6 +74,15 @@ function App() {
             
           <OneImageBox image={workflow} backgroundColor={"white"} />
 
+          <TextBox
+            title={"Demonstration on Joint Segmentation and Point Tracking"}
+            backgroundColor={bgColor}
+            textColor={"white"}
+          ></TextBox>
+          <MiddleVideoBox video1={jointvideo1} video2={jointvideo2} title="Animal Instances" backgroundColor="white"/>
+          <MiddleVideoBox video1={jointvideo3} video2={jointvideo4} title="Fine-grained Object Parts" backgroundColor="white"/>
+          <MiddleVideoBox video1={jointvideo5} video2={jointvideo6} title="Dynamic Vehicle Instances" backgroundColor="white"/>
+          <MiddleVideoBox video1={jointvideo7} video2={jointvideo8} title="Dynamic Human Instances" backgroundColor="white"/>
 
           <TextBox
             title={"ECCV 2024 Submission"}
