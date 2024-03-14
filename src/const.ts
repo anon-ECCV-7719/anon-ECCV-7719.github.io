@@ -12,12 +12,12 @@ export const video6 = "/top4.mp4"
 
 export const jointvideo1 = "/gold-fish-020-pr_rto_32_thr_0.07.mp4"
 export const jointvideo2 = "/goat-000-pr_rto_32_thr_0.07.mp4"
-export const jointvideo3 = "/car-shadow-002-pr_rto_32_thr_0.07.mp4"
+export const jointvideo3 = "/car-shadow-003-pr_rto_128_thr_0.75.mp4"
 export const jointvideo4 = "/car-shadow-004-pr_rto_32_thr_0.07.mp4"
-export const jointvideo5 = "/scooter-black-008-pr_rto_32_thr_0.07.mp4"
-export const jointvideo6 = "/car-roundabout-pr_rto_32_thr_0.07.mp4"
+export const jointvideo5 = "/drifit-straight-002-pr_rto_32_thr_0.07.mp4"
+export const jointvideo6 = "/car-roundabout-013-pr_rto_128_thr_0.07.mp4"
 export const jointvideo7 = "/horse-jump-012-pr_rto_32_thr_0.07.mp4"
-export const jointvideo8 = "/judo-023-pr_rto_32_thr_0.07.mp4"
+export const jointvideo8 = "/loading-021-pr_rto_128_thr_0.07.mp4"
 export const workflow = "/workflow.png"
 
 export const abstract = `Estimating motion trajectories over video frames is an essential aspect of understanding video content. However, conventional approaches for motion estimation such as video point tracking and video instance segmentation, often fall short in accurately representing the trajectories of multiple points of a target instance. To bridge this gap, we introduce a novel approach: Unified Motion Estimation (UniMotion). UniMotion is specifically designed to tackle each challenge of video segmentation and point tracking concurrently, offering a more holistic approach to estimating motion trajectories in intricate video scenes. Our key discovery is that both tracking and segmentation can significantly enhance each other through their synergistic effects within the framework. For example, segmentation can guide better tracking by offering semantically related points in the queried frame, and conversely, tracking can guide the precise instance location to segmentation foundation models (e.g., segment anything) to enable video instance segmentation in a unified framework. Throughout extensive experiments, we demonstrate the efficacy of UniMotion in improving motion estimation performances in terms of the existing video segmentation and point tracking benchmarks. For example, on the recent TAP-Vid benchmark, our framework consistently improves the tracking performance, e.g., 13.6% improvement on the standard Jaccard metric. Furthermore, we found our point tracking results can lead to enhanced zero-shot video instance segmentation results, with up to 14.7% improvement compared to baselines on the intersection score.`;
