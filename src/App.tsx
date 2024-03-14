@@ -8,6 +8,10 @@ import {
   abstract,
   video1,
   video2,
+  video3,
+  video4,
+  video5,
+  video6,
   jointvideo1,
   jointvideo2,
   jointvideo3,
@@ -29,7 +33,7 @@ function App() {
       <WindowSizeContextProvider>
         <div className="w-screen h-screen min-w-[1400px]">
 
-          <TopVideoBox video1={video1} video2={video2} title="Our in-the-wild demonstration with YouTube videos" backgroundColor="white"/>
+          <TopVideoBox video1={video1} video2={video2} video3={video3} video4={video4} video5={video5} video6={video6} title="(Zero-shot Video Segmentation with in-the-wild YouTube clips)" backgroundColor="white"/>
 
           {/* FIXME: Title, Author */}
           <TextBox
@@ -75,7 +79,7 @@ function App() {
           <OneImageBox image={workflow} backgroundColor={"white"} />
 
           <TextBox
-            title={"Demonstration on Joint Segmentation and Point Tracking"}
+            title={"Demonstration on Joint Point Tracking and Segmentation"}
             backgroundColor={bgColor}
             textColor={"white"}
           ></TextBox>
